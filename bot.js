@@ -103,9 +103,9 @@ client.on('message', async rokz => {
               }, 3000)
  
               rokzz.send(`
-» اللغة : **${lang}**
-» المدة : **${time}**
-» الخبرة : **${expe}**
+» اسم البوت : **${lang}**
+» الميزات : **${time}**
+» الدعوة : **${expe}**
 تم التقديم بواسطة: ${rokz.author}
 `).then(rokzzz => {
  
