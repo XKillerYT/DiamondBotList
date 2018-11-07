@@ -36,7 +36,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : Diamond Codes ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`#تقديم | DiamondBotList`,"http://twitch.tv/S-F")
+client.user.setGame(`#تقديم | DiamondShop`,"http://twitch.tv/S-F")
 client.user.setStatus("online")
  
 });
@@ -53,7 +53,7 @@ client.on('message', async rokz => {
  
       let fillter = m => m.author.id === rokz.author.id
  
-      await rokz.channel.send("اسم بوتك ؟").then(e => {
+      await rokz.channel.send("اسمك ؟").then(e => {
  
      rokz.channel.awaitMessages(fillter, { time: 60000, max: 1 })
  
@@ -64,7 +64,7 @@ client.on('message', async rokz => {
         co.first().delete();
  
  
-       e.edit(`ما هي ميزاته ؟
+       e.edit(`عمرك ؟
 [${lang}]`)
  
        rokz.channel.awaitMessages(fillter, { time: 60000, max: 1 })
@@ -76,7 +76,7 @@ client.on('message', async rokz => {
           col.first().delete();
  
  
-            e.edit(`رابط دعوة البوت
+            e.edit(`دليل انك مو نصاب ؟
 [${time}]
 [${lang}]`)
  
@@ -103,9 +103,9 @@ client.on('message', async rokz => {
               }, 3000)
  
               rokzz.send(`
-» اسم البوت : **${lang}**
-» الميزات : **${time}**
-» الدعوة : **${expe}**
+» االاسم : **${lang}**
+» العمر : **${time}**
+» الدليل انه مو نصاب : **${expe}**
 تم التقديم بواسطة: ${rokz.author}
 `).then(rokzzz => {
  
@@ -136,11 +136,11 @@ client.on('message',async message => {
  
 let mention = message.mentions.members.first();
  
-let Room = client.channels.get('507228868965433365');
+let Room = client.channels.get('509599472473341979');
  
 if(message.content.startsWith(prefix + "رفض")) {
  
-if(message.guild.id !== '507224549516115969') return;
+if(message.guild.id !== '496257773529595906') return;
  
  if (!message.member.hasPermission("MANAGE_ROLES")) return message.reply("**للأسف ليس لديك صلاحية**").then(msg => msg.delete(5000));
  
@@ -163,11 +163,11 @@ client.on('message',async message => {
  
 let mention = message.mentions.members.first();
  
-let Room = client.channels.get('507228868965433365');
+let Room = client.channels.get('509599472473341979');
  
 if(message.content.startsWith(prefix + "قبول")) {
  
-if(message.guild.id !== '507224549516115969') return;
+if(message.guild.id !== '496257773529595906') return;
  
  if (!message.member.hasPermission("MANAGE_ROLES")) return message.reply("**للأسف ليس لديك صلاحية**").then(msg => msg.delete(5000));
  
